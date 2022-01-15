@@ -2,6 +2,7 @@
   "name": "goit-react-hw-06-phonebook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nattalliaod.github.io/goit-react-hw-06-phonebook",
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^5.16.1",
@@ -25,8 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
