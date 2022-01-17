@@ -35,7 +35,9 @@ const ContactsForm = () => {
       return;
     }
     if (contacts.map(contact => contact.name).includes(name)) {
-      alert(`${name} is already in contacs`);
+      alert(`${name} is already in contacts`);
+      reset();
+      return;
     }
 
     dispatch(addContact({ name, number }));
